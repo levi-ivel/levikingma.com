@@ -1,8 +1,6 @@
-const header = document.querySelector('header');
-const name = document.getElementById('name');
-
-let posX = header.clientWidth / 2;
-let posY = header.clientHeight / 2;
+const nameElement = document.getElementById('name');
+let posX = Math.random() * window.innerWidth;
+let posY = Math.random() * window.innerHeight;
 let dx = 2; 
 let dy = 2; 
 
@@ -10,29 +8,30 @@ function moveName() {
     posX += dx;
     posY += dy;
 
-
-    if (posX + name.offsetWidth / 2 >= header.clientWidth) {
-        posX = header.clientWidth - name.offsetWidth / 2;
+    if (posX + nameElement.offsetWidth >= window.innerWidth) {
+        posX = window.innerWidth - nameElement.offsetWidth;
         dx = -dx;
     }
-
-    if (posX - name.offsetWidth / 2 <= 0) {
-        posX = name.offsetWidth / 2;
+    if (posX <= 0) {
+        posX = 0;
         dx = -dx;
     }
-
-    if (posY + name.offsetHeight / 2 >= header.clientHeight) {
-        posY = header.clientHeight - name.offsetHeight / 2;
+    if (posY + nameElement.offsetHeight >= document.documentElement.scrollHeight) {
+        posY = document.documentElement.scrollHeight - nameElement.offsetHeight;
+        dy = -dy;
+    }
+    if (posY <= 0) {
+        posY = 0;
         dy = -dy;
     }
 
-    if (posY - name.offsetHeight / 2 <= 0) {
-        posY = name.offsetHeight / 2;
-        dy = -dy;
-    }
-
-    name.style.left = posX + 'px';
-    name.style.top = posY + 'px';
+    nameElement.style.left = posX + 'px';
+    nameElement.style.top = posY + 'px';
 }
 
 setInterval(moveName, 20);
+
+window.addEventListener('resize', () => {
+    posX = Math.min(posX, window.innerWidth - nameElement.offsetWidth);
+    posY = Math.min(posY, document.documentElement.scrollHeight - nameElement.offsetHeight);
+});

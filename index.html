@@ -3,65 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Resume</title>
+    <title>Home</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <div class="header-circle">
-            <img src="assets/design181.png" alt="Logo">
-            <h1 id="name">Levi Kingma</h1>
-        </div>
+        <img src="/assets/design181.png" alt="Logo" class="logo">
+        <h1>LEVI'S.PAGE</h1>
     </header>
-
+    <div id="name">Levi Kingma</div>
     <main>
-        <section id="personal-description">
-            <h2>Personal Description</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+        <section id="introduction">
+            <h2>About This Page</h2>
+            <p>This page serves as a showcase for projects I've completed and those I'm currently working on. <br> If you're interested in these projects or simply want to get in touch, you can find my contact information in the footer of this page</p>
         </section>
 
-        <section id="skills">
-            <h2>Skills</h2>
-            <div class="skill">
-                <span>C#</span>
-                <div class="rating" data-rating="3.7">3.7</div>
+        <section class="project">
+            <div class="project-info">
+                <h3>MostUsed</h3>
+                <p>MostUsed is a plugin I made for note taking webapp Obsidian. <br> <br> It's programmed in TypeScript and takes the 100 most used words from all the users notes and makes a graph of them using Chart.JS. It also updates in real time. <br> <br> This project was started on 01-05-2024 and was merged with Obsidians branch on 18-05-2024</p>
             </div>
-            <div class="skill">
-                <span>Python</span>
-                <div class="rating" data-rating="4">4</div>
-            </div>
-            <div class="skill">
-                <span>HTML</span>
-                <div class="rating" data-rating="4.5">4.5</div>
-            </div>
-            <div class="skill">
-                <span>CSS</span>
-                <div class="rating" data-rating="4.5">4.5</div>
-            </div>
-            <div class="skill">
-                <span>JavaScript</span>
-                <div class="rating" data-rating="4">4</div>
+            <div class="project-gif">
+                <img src="assets/MostUsed.gif" alt="Project 1 GIF">
             </div>
         </section>
 
-        <section id="experience">
-            <h2>Experience</h2>
-            <p>Experience details go here.</p>
-        </section>
-
-        <section id="education">
-            <h2>Education</h2>
-            <p>Education details go here.</p>
-        </section>
-
-        <section id="contact-info">
-            <h2>Contact Info</h2>
-            <p>Contact details go here.</p>
+        <section class="project">
+            <div class="project-gif">
+                <img src="/assets/Keuzedeel_MAD.gif" alt="Project 2 GIF">
+            </div>
+            <div class="project-info">
+                <h3>Data Size Converter</h3>
+                <p>Data Size Converter is a simple application that takes 2 file sizes and a given value and converts that value to the new size type. It also has the option to turn on dark mode. <br> <br> It's programmed in Flutter using Android Studio and was part of a pratical exam for school. <br> <br> This project was started on 19-04-2024 and finished on 23-04-2024. </p>
+            </div>
         </section>
     </main>
-
     <footer>
-        <div class="snake"></div>
+        <a href="https://github.com/levi-ivel" target="_blank" class="footer-link">GitHub</a>
+        <a href="https://www.linkedin.com/in/levi-kingma-36a317293/" target="_blank" class="footer-link">LinkedIn</a>
+        <a href="mailto:levi.kingma@gmail.com"  class="email">levi.kingma@gmail.com</a>
     </footer>
 
     <script src="script.js"></script>
