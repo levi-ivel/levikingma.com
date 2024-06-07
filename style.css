@@ -22,13 +22,13 @@ header {
     padding: 20px;
 }
 
-.logo {
-    height: 50px;
-}
-
 header h1 {
     margin: 0;
     font-size: 24px;
+}
+
+.logo {
+    height: 50px;
 }
 
 #name {
@@ -54,6 +54,7 @@ section {
     text-align: center;
 }
 
+
 section h2 {
     font-size: 36px;
     margin-bottom: 20px;
@@ -63,32 +64,28 @@ section p {
     font-size: 18px;
 }
 
-footer {
-    background-color: rgb(94, 22, 40);
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-}
-
-.footer-link {
-    color: rgb(242, 195, 197);
-    text-decoration: none;
-    margin: 0 10px;
-}
-
-.email {
-    color: rgb(242, 195, 197);
-    margin: 0 10px;
-}
-
 .project {
     padding: 20px;
     text-align: left;
+    position: relative;
+    transition: opacity 0.3s ease, z-index 0.3s ease;
+    z-index: 1;
 }
+
+body:not(:hover) .project {
+    opacity: 1;
+}
+
+body:hover .project {
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+}
+
+body:hover .project:hover {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
 
 .project-header {
     display: flex;
@@ -123,27 +120,14 @@ footer {
     height: auto;
 }
 
-@media screen and (max-width: 600px) {
-    .project-content {
-        flex-direction: column;
-    }
-
-    .project-info,
-    .project-gif {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .project-gif img {
-        width: 100%;
-    }
+.project-gif img {
+    width: 80%;
+    height: auto;
+    transition: transform 0.3s ease;
 }
 
-@media screen and (max-width: 600px) {
-    #contributionsChart {
-        max-width: 80%;
-        margin: auto;
-    }
+.project-gif img:hover {
+    transform: scale(1.1);
 }
 
 .mostused {
@@ -162,6 +146,7 @@ footer {
     width: 100%;
     margin: 0;
     text-align: center;
+    margin-bottom: 40px;
 }
 
 #stats h2 {
@@ -202,7 +187,42 @@ footer {
     max-width: 600px;
 }
 
+footer {
+    background-color: rgb(94, 22, 40);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.footer-link {
+    color: rgb(242, 195, 197);
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.email {
+    color: rgb(242, 195, 197);
+    margin: 0 10px;
+}
+
 @media screen and (max-width: 600px) {
+    .project-content {
+        flex-direction: column;
+    }
+
+    .project-info,
+    .project-gif {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .project-gif img {
+        width: 100%;
+    }
     .stats-container {
         flex-direction: column;
     }
@@ -210,4 +230,15 @@ footer {
     .stats-details {
         padding-right: 0;
     }
+
+    #contributionsChart {
+        max-width: 80%;
+        margin: auto;
+    }
+
+    #totalRepos,
+    #totalContributions {
+        margin: 10px 0
+    }
+
 }
