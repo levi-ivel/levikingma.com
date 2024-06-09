@@ -16,63 +16,62 @@
     <main>
         <section id="introduction">
             <h2>About</h2>
-            <p>Hi! I'm <b>Levi Kingma</b>, a 17-year-old Software Development student at <b>Firda</b>. <br> This page serves as a showcase for the projects I've completed or am currently working on. <br> If any of these projects interest you, please feel free to <b><u>contact me.</u></b></p>
+            <p>Hi! I'm <b>Levi Kingma</b>, a 17-year-old Software Development student at <b>Firda</b>. <br> This page serves as a showcase for the projects I've completed or am currently working on. <br> If any of these projects interest you, please feel free to <b><u><a href="#footer" onclick="scrollToFooter()">contact me</a></u></b></p>
         </section>
+    </main>
+    <section class="project mostused" onclick="toggleProjectSection(this)">
+        <div class="project-header">
+            <img src="assets/MostUsedLogo.png" alt="MostUsed Logo" class="project-logo">
+        </div>
+        <div class="project-content">
+            <div class="project-gif">
+                <img src="assets/MostUsed.gif" alt="MostUsed GIF">
+            </div>
+            <div class="project-info">
+                <p><b>MostUsed</b> is a plugin I made for note taking webapp Obsidian. <br><br><br> It's programmed in <b>TypeScript</b> and takes the 100 most used words from all the users notes and makes a graph of them using <b>Chart.JS</b>. This graph also updates in real time. <br><br><br> This project was started on <b>01-05-2024</b>, was merged with Obsidians branch on <b>18-05-2024</b> and is currently sitting at <b>140 downloads</b></p>
+            </div>
+        </div>
+    </section>
 
-        <section class="project mostused">
-            <div class="project-header">
-                <img src="assets/MostUsedLogo.png" alt="MostUsed Logo" class="project-logo">
+    <section class="project desstop" onclick="toggleProjectSection(this)">
+        <div class="project-header">
+            <img src="assets/DesstopLogo.png" alt="Desstop Logo" class="project-logo">
+        </div>
+        <div class="project-content">
+            <div class="project-gif">
+                <img src="assets/Dess.gif" alt="Desstop GIF">
             </div>
-            <div class="project-content">
-                <div class="project-gif">
-                    <img src="assets/MostUsed.gif" alt="MostUsed GIF">
-                </div>
-                <div class="project-info">
-                    <p><b>MostUsed</b> is a plugin I made for note taking webapp Obsidian. <br><br><br> It's programmed in <b>TypeScript</b> and takes the 100 most used words from all the users notes and makes a graph of them using <b>Chart.JS</b>. This graph also updates in real time. <br><br><br> This project was started on <b>01-05-2024</b>, was merged with Obsidians branch on <b>18-05-2024</b> and is currently sitting at <b>120 downloads</b></p>
-                </div>
+            <div class="project-info">
+                <p><b>Desstop</b> is an ASCII faced desktop assistant that can perform numerous commands via a terminal. <br><br><br> It's programmed in <b>Python</b> using <b>Tkinter</b> and is a side project of mine. Dess can set countdowns, open programs, spin a wheel of set outcomes and much more <br><br><br> This project was started on <b>19-05-2024</b> and is still being worked on.</p>
             </div>
-        </section>
-
-        <section class="project desstop">
-            <div class="project-header">
-                <img src="assets/DesstopLogo.png" alt="Desstop Logo" class="project-logo">
-            </div>
-            <div class="project-content">
-                <div class="project-gif">
-                    <img src="assets/Dess.gif" alt="Desstop GIF">
-                </div>
-                <div class="project-info">
-                    <p><b>Desstop</b> is an ASCII faced desktop assistant that can perform numerous commands via a terminal. <br><br><br> It's programmed in <b>Python</b> using <b>Tkinter</b> and is a side project of mine. Dess can set countdowns, open programs, spin a wheel of set outcomes and much more <br><br><br> This project was started on <b>19-05-2024</b> and is still being worked on.</p>
-                </div>
-            </div>
-        </section>
-        
-        <section id="stats">
-            <h2>Further Info:</h2>
-            <div class="stats-container">
-                <div class="stats-details">
-                    <p id="totalRepos"></p>
-                    <p id="totalContributions"></p>
-                    <div id="badges">
-                        <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=f2c3c5&color=5e1628" alt="Python Badge">
-                        <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=f2c3c5&color=5e1628" alt="JavaScript Badge">
-                        <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=f2c3c5&color=5e1628" alt="TypeScript Badge">
-                        <img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=f2c3c5&color=5e1628" alt="C# Badge">
-                        <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=f2c3c5&color=5e1628" alt="Flutter Badge">
-                    </div>
-                </div>
-                <div class="stats-chart">
-                    <canvas id="contributionsChart"></canvas>
+        </div>
+    </section>
+    
+    <section id="stats">
+        <h2>Further Info:</h2>
+        <div class="stats-container">
+            <div class="stats-details">
+                <p id="totalRepos"></p>
+                <p id="totalContributions"></p>
+                <div id="badges">
+                    <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=f2c3c5&color=5e1628" alt="Python Badge">
+                    <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=f2c3c5&color=5e1628" alt="JavaScript Badge">
+                    <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=f2c3c5&color=5e1628" alt="TypeScript Badge">
+                    <img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=f2c3c5&color=5e1628" alt="C# Badge">
+                    <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=f2c3c5&color=5e1628" alt="Flutter Badge">
                 </div>
             </div>
-        </section>
-        
-    <footer>
+            <div class="stats-chart">
+                <canvas id="contributionsChart"></canvas>
+            </div>
+        </div>
+    </section>
+    
+    <footer id="footer">
         <a href="https://github.com/levi-ivel" target="_blank" class="footer-link">GitHub</a>
         <a href="https://www.linkedin.com/in/levi-kingma-36a317293/" target="_blank" class="footer-link">LinkedIn</a>
         <a href="mailto:levi.kingma@gmail.com" class="email">levi.kingma@gmail.com</a>
     </footer>
-
     <script src="script.js"></script>
 </body>
 </html>

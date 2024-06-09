@@ -117,3 +117,18 @@ function displayGitHubStats({ repos, contributionsPerMonth, totalContributions }
     const stats = await fetchGitHubStats(username);
     displayGitHubStats(stats);
 })();
+
+function toggleProjectSection(section) {
+    if (section.classList.contains('active')) {
+        section.classList.remove('active');
+        section.classList.add('inactive');
+    } else {
+        section.classList.remove('inactive');
+        section.classList.add('active');
+    }
+}
+
+function scrollToFooter() {
+    const footer = document.getElementById("footer");
+    footer.scrollIntoView({ behavior: "smooth" });
+}

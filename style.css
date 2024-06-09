@@ -2,6 +2,10 @@ html, body{
     overflow-x: hidden;
 }
 
+header, body {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     position: relative;
@@ -35,7 +39,7 @@ header h1 {
     position: absolute;
     font-size: 24px;
     color: rgb(255, 255, 255);
-    z-index: 2;
+    z-index: 8;
 }
 
 main {
@@ -54,7 +58,6 @@ section {
     text-align: center;
 }
 
-
 section h2 {
     font-size: 36px;
     margin-bottom: 20px;
@@ -68,40 +71,48 @@ section p {
     padding: 20px;
     text-align: left;
     position: relative;
-    transition: opacity 0.3s ease, z-index 0.3s ease;
-    z-index: 1;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    overflow: hidden;
 }
 
-body:not(:hover) .project {
-    opacity: 1;
+.project.active {
+    animation: expand 1s forwards;
 }
 
-body:hover .project {
-    opacity: 0.5;
-    transition: opacity 0.3s ease;
+.project.inactive {
+    animation: shrink 1s forwards;
 }
-
-body:hover .project:hover {
-    opacity: 1;
-    transition: opacity 0.3s ease;
-}
-
 
 .project-header {
     display: flex;
     align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
 }
 
 .project-logo {
     height: 50px;
-    margin-right: 20px;
+    transition: transform 0.5s ease;
 }
 
 .project-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 20px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 80%;
+    z-index: 1;
+}
+
+.project.active .project-content {
+    opacity: 1;
+    transition-delay: 1s;
 }
 
 .project-info {
@@ -112,32 +123,42 @@ body:hover .project:hover {
 .project-gif {
     flex: 1;
     text-align: center;
-    z-index: 5;
 }
 
 .project-gif img {
     width: 80%;
     height: auto;
-}
-
-.project-gif img {
-    width: 80%;
-    height: auto;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease; 
 }
 
 .project-gif img:hover {
-    transform: scale(1.1);
+    transform: scale(1.1); 
 }
 
 .mostused {
     background-color: #000;
     color: #fff;
+    transition: background-color 0.5s ease;
+    z-index: 1;
+}
+
+.project.active.mostused {
+    background-color: #000;
+    background-image: url('assets/oooooBars.gif');
+    background-size: 60%;
+    background-position: 80% bottom;
+    background-repeat: no-repeat;
 }
 
 .desstop {
     background-color: #fff;
     color: #000;
+    transition: background-color 0.5s ease;
+    z-index: 2;
+}
+
+.project.active.desstop {
+    background-color: #fff;
 }
 
 #stats {
@@ -156,46 +177,26 @@ body:hover .project:hover {
 
 .stats-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: space-around;
 }
 
 .stats-details {
     flex: 1;
-    text-align: left;
-    padding-right: 20px;
-}
-
-#badges img {
-    margin: 5px;
-}
-
-#totalRepos,
-#totalContributions {
-    font-size: 18px;
-    margin: 100px 0;
+    padding: 20px;
+    margin: 100px;
 }
 
 .stats-chart {
     flex: 1;
-    text-align: center;
-}
-
-#contributionsChart {
-    width: 100%;
-    max-width: 600px;
+    padding: 20px;
+    position: relative;
+    height: 100%;
 }
 
 footer {
     background-color: rgb(94, 22, 40);
-    color: #fff;
+    padding: 10px;
     text-align: center;
-    padding: 20px 0;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
 }
 
 .footer-link {
@@ -204,41 +205,69 @@ footer {
     margin: 0 10px;
 }
 
-.email {
-    color: rgb(242, 195, 197);
-    margin: 0 10px;
+.footer-link:hover {
+    text-decoration: underline;
 }
 
-@media screen and (max-width: 600px) {
+.email {
+    display: block;
+    margin-top: 10px;
+    color: rgb(242, 195, 197);
+}
+
+@media (max-width: 1200px) {
     .project-content {
         flex-direction: column;
     }
 
-    .project-info,
-    .project-gif {
-        width: 100%;
-        margin-bottom: 20px;
+    .project-info, .project-gif {
+        padding: 10px;
     }
 
-    .project-gif img {
+    .project-gif img{
+        height: auto;
         width: 100%;
     }
+
+    .stats-details{
+        margin: 0px;
+    }
+
     .stats-container {
         flex-direction: column;
     }
-
-    .stats-details {
-        padding-right: 0;
-    }
-
-    #contributionsChart {
-        max-width: 80%;
-        margin: auto;
-    }
-
-    #totalRepos,
-    #totalContributions {
-        margin: 10px 0
-    }
-
 }
+
+@keyframes expand {
+    0% {
+        transform: scale(1);
+        height: auto;
+    }
+    100% {
+        transform: scale(1.1);
+        height: 100vh;
+    }
+}
+
+@keyframes shrink {
+    0% {
+        transform: scale(1.1);
+        height: 100vh;
+    }
+    100% {
+        transform: scale(1);
+        height: auto;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
