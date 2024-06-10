@@ -1,3 +1,4 @@
+
 const nameElement = document.getElementById('name');
 let posX = Math.random() * window.innerWidth;
 let posY = Math.random() * window.innerHeight;
@@ -79,7 +80,7 @@ async function fetchGitHubStats(username) {
         contributionsPerMonth[eventDate.getMonth()]++;
     });
 
-    const totalContributions = pushEvents.length; // Total contributions count based on "PushEvent" type
+    const totalContributions = pushEvents.length;
 
     return { repos, contributionsPerMonth, totalContributions };
 }
@@ -118,17 +119,21 @@ function displayGitHubStats({ repos, contributionsPerMonth, totalContributions }
     displayGitHubStats(stats);
 })();
 
-function toggleProjectSection(section) {
-    if (section.classList.contains('active')) {
-        section.classList.remove('active');
-        section.classList.add('inactive');
-    } else {
-        section.classList.remove('inactive');
-        section.classList.add('active');
-    }
-}
-
-function scrollToFooter() {
-    const footer = document.getElementById("footer");
-    footer.scrollIntoView({ behavior: "smooth" });
-}
+$('[lang]').hide(); 
+$('[lang="nl"]').show(); 
+$('#lang-switch').change(function () {
+    var lang = $(this).val(); 
+    switch (lang) {
+        case 'en':
+            $('[lang]').hide();
+            $('[lang="en"]').show();
+        break;
+        case 'ko':
+            $('[lang]').hide();
+            $('[lang="nl"]').show();
+        break;
+        default:
+            $('[lang]').hide();
+            $('[lang="nl"]').show();
+        }
+});
