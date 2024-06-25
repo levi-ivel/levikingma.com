@@ -1,4 +1,4 @@
-
+//function for making my name bounce around the screen
 const nameElement = document.getElementById('name');
 let posX = Math.random() * window.innerWidth;
 let posY = Math.random() * window.innerHeight;
@@ -32,6 +32,7 @@ function moveName() {
     updateNameColor();
 }
 
+//function for changing the color of my name depending on the background
 function updateNameColor() {
     const nameRect = nameElement.getBoundingClientRect();
     const sections = document.querySelectorAll('section');
@@ -66,6 +67,7 @@ window.addEventListener('resize', () => {
     posY = Math.min(posY, document.documentElement.scrollHeight - nameElement.offsetHeight);
 });
 
+//function for the GitHub graph & Stats
 async function fetchGitHubStats(username) {
     const reposResponse = await fetch(`https://api.github.com/users/${username}/repos?per_page=100`);
     const repos = await reposResponse.json();
@@ -119,6 +121,7 @@ function displayGitHubStats({ repos, contributionsPerMonth, totalContributions }
     displayGitHubStats(stats);
 })();
 
+//function for changing the language
 $('[lang]').hide(); 
 $('[lang="nl"]').show(); 
 $('#lang-switch').change(function () {
@@ -137,3 +140,66 @@ $('#lang-switch').change(function () {
             $('[lang="nl"]').show();
         }
 });
+
+//function for chaos
+document.getElementById('disable-gravity').addEventListener('click', function() {
+    document.querySelectorAll('body *').forEach(element => {
+        if (!element.classList.contains('no-float') && element.id !== 'disable-gravity') {
+            element.classList.toggle('zero-gravity');
+            if (element.classList.contains('zero-gravity')) {
+                enableZeroGravity(element);
+            } else {
+                disableZeroGravity(element);
+            }
+        }
+    });
+});
+
+function enableZeroGravity(element) {
+    const rect = element.getBoundingClientRect();
+    element.style.position = 'fixed';
+    element.style.top = rect.top + 'px';
+    element.style.left = rect.left + 'px';
+    element.style.width = rect.width + 'px';
+    element.style.height = rect.height + 'px';
+    element.dx = (Math.random() - 0.5) * 4; 
+    element.dy = (Math.random() - 0.5) * 4; 
+    element.zeroGravityInterval = setInterval(() => {
+        moveElement(element);
+    }, 20);
+}
+
+function disableZeroGravity(element) {
+    clearInterval(element.zeroGravityInterval);
+    element.style.position = '';
+    element.style.top = '';
+    element.style.left = '';
+    element.style.width = '';
+    element.style.height = '';
+}
+
+function moveElement(element) {
+    const rect = element.getBoundingClientRect();
+    let newTop = rect.top + element.dy;
+    let newLeft = rect.left + element.dx;
+
+    if (newTop <= 0) {
+        newTop = 0;
+        element.dy = -element.dy; 
+    } else if (newTop + rect.height >= window.innerHeight) {
+        newTop = window.innerHeight - rect.height;
+        element.dy = -element.dy;
+    }
+
+    if (newLeft <= 0) {
+        newLeft = 0;
+        element.dx = -element.dx; 
+    } else if (newLeft + rect.width >= window.innerWidth) {
+        newLeft = window.innerWidth - rect.width;
+        element.dx = -element.dx; 
+    }
+
+    element.style.top = newTop + 'px';
+    element.style.left = newLeft + 'px';
+}
+

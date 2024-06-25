@@ -223,6 +223,18 @@ footer {
     margin: 0 10px;
 }
 
+#disable-gravity {
+    background-color: #5e1628;
+    color: #f2c3c5;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    bottom: 20px;
+    right: 50%;
+    z-index: 5;
+}
+
 @media screen and (max-width: 1200px) {
     .project-content {
         flex-direction: column;
@@ -286,3 +298,4 @@ footer {
         opacity: 1;
     }
 }
+
