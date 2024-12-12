@@ -1,38 +1,302 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111;
+  color: #eee;
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  position: relative;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  padding: 10px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.time {
+  color: #888;
+}
+
+.intro p {
+  margin: 10px 0;
+}
+
+.directions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.box {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #333;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.index {
+  margin: 20px 0;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.index p {
+  margin: 5px 0;
+  margin-bottom: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.directions a {
+  color:aqua;
+  text-decoration: none; 
+  background-color: none;
+}
+
+.directions h2{
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.directions p{
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.name {
+  margin: 20px 0;
+}
+
+.ascii-art {
+  font-size: 20px;
+  white-space: pre;
+  overflow: hidden;
+  letter-spacing: -11px;
+  transition: letter-spacing 0.5s ease-in-out;
+}
+
+.ascii-art:hover {
+  letter-spacing: normal;
+}
+
+.contact-links {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.social-btn {
+  color: #ebebeb;
+  text-decoration: none;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s;
+}
+
+.social-btn:hover {
+  color: #4CAF50; 
+}
+
+.social-btn svg {
+  width: 32px;
+  height: 32px;
+}
+
+.social-btn {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.box {
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid #222222; 
+  border-radius: 8px;
+  background-color: #111;
+  text-align: center; 
+  transition: all 0.3s ease;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.section-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.section-box {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.section-box .section-list {
+  font-size: 1rem;
+  color: #bbbbbb;
+  font-style: italic;
+}
+
+.section-list {
+  margin-top: 10px;
+}
+
+.project-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid #222222;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #111;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.project-gif {
+  max-width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.project-gif:hover {
+  transform: scale(1.05);
+}
+
+.project-info {
+  color: #eee;
+}
+
+.project-info h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.project-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.tech-icons, .github-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.icon {
+  font-size: 1.5rem;
+  color: #eee;
+  transition: color 0.3s ease;
+  width: 24px;  
+  height: 24px;
+}
+
+.github-link {
+  text-decoration: none;
+  color: aqua;
+  font-weight: bold;
+}
+
+.github-link:hover .icon {
+  color: #4CAF50;
+}
+
+.project-info p {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+.project-info .further-info a {
+  color: aqua;
+  text-decoration: none;
+}
+
+.project-info .further-info a:hover {
+  text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    padding: 5px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .box {
+    width: 100%;
+    padding: 10px;
+    font-size: 0.9rem;
+    margin: 0 auto; 
+  }
+
+  .section-box {
+    gap: 10px;
+  }
+
+  .ascii-art{
+    font-size: 13px;
+    letter-spacing: normal; 
+    transition: none;
   }
 }
+
+@media (max-width: 480px) {
+  .container {
+    padding: 5px;
+  }
+
+  .box {
+    width: 100%;
+    padding: 8px;
+    font-size: 0.8rem;
+    margin: 0 auto; 
+  }
+
+  .section-box {
+    font-size: 1rem;
+  }
+
+  .section-list {
+    font-size: 0.9rem;
+  }
+
+  .social-btn svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .index p {
+    margin-bottom: 15px;
+  }
+}
+
