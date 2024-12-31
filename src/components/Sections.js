@@ -18,6 +18,7 @@ function Sections() {
           <div className="section-box">
             <div className="section-list">{"IDE { VSCode, IntelliJ IDEA, Android Studio }"}</div>
             <div className="section-list">{"Version Control { GitHub }"}</div>
+            <div className="section-list">{"Engine { Unity }"}</div>
           </div>
         </div>
     </section>

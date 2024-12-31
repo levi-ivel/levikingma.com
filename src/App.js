@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./components/Header";
 import Sections from "./components/Sections";
-import Projects from "./components/Projects"; // Import the new component
+import Projects from "./components/Projects";
 import "./App.css";
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
       <Header />
       <main>
         <Sections />
-        <Projects /> {/* Add Projects below Sections */}
+        <Projects /> 
       </main>
     </div>
   );
