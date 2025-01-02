@@ -17,7 +17,7 @@ function Sections() {
           <h2>My Tools</h2>
           <div className="section-box">
             <div className="section-list">{"IDE { VSCode, IntelliJ IDEA, Android Studio }"}</div>
-            <div className="section-list">{"Version Control { GitHub }"}</div>
+            <div className="section-list">{"Version Control { Git, GitHub }"}</div>
             <div className="section-list">{"Engine { Unity }"}</div>
           </div>
         </div>

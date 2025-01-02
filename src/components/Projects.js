@@ -29,7 +29,7 @@ function Projects() {
           </div>
           <p className="further-info">
               MostUsed is a plugin I made for note taking webapp Obsidian. It takes the most used words from a persons vault, folder or note and displays those words in a graph by usage <br/> <br/>
-              The project was started on 01-05-2024, merged with Obsidian's branch on 18-05-2024 and is currently sitting at 572 downloads
+              The project was started on 01-05-2024, merged with Obsidian's branch on 18-05-2024 and is currently sitting at 1210 downloads
           </p>
         </div>
       </div>

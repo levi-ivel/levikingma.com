@@ -103,6 +103,8 @@ header {
   display: flex;
   align-items: center;
   transition: color 0.3s;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .social-btn:hover {
@@ -112,11 +114,6 @@ header {
 .social-btn svg {
   width: 32px;
   height: 32px;
-}
-
-.social-btn {
-  font-size: 16px;
-  font-weight: bold;
 }
 
 
@@ -136,25 +133,15 @@ h2 {
   transition: all 0.3s ease;
 }
 
-h2 {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 10px;
-  color: #333;
-}
-
 .section-box {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 15px;
   margin-top: 20px;
-}
-
-.section-box {
   font-size: 1.1rem;
   font-weight: bold;
-  color: #333;
+  color: #ffffff;
 }
 
 .section-box .section-list {
