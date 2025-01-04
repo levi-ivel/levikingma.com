@@ -1,7 +1,8 @@
 import React from "react";
 
+// Store the visual of my name in ASCII
 function AsciiName() {
-    return (
+  return (
     <pre className="ascii-art">
       {`
      ___       ___           ___                 

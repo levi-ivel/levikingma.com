@@ -7,8 +7,10 @@ import { faPython } from "@fortawesome/free-brands-svg-icons";
 function Projects() {
   return (
     <div className="section-box">
+
       <h2>Projects</h2>
 
+    {/* Displays project info of MostUsed (gif, TypeScript icon, GitHub link, project description) */}
       <div className="project-box">
         <img
           src="assets/MostUsed.gif"
@@ -34,6 +36,7 @@ function Projects() {
         </div>
       </div>
 
+    {/* Displays project info of MostUsed (gif, Python icon, GitHub link, project description) */}
       <div className="project-box">
         <img
           src="assets/Dess.gif"
@@ -58,8 +61,8 @@ function Projects() {
           </p>
         </div>
       </div>
+
     </div>
-    
   );
 }
 
