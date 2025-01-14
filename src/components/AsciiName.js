@@ -1,4 +1,5 @@
 import React from "react";
+import "./AsciiName.css";
 
 // Store the visual of my name in ASCII
 function AsciiName() {

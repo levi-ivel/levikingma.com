@@ -1,4 +1,5 @@
 import React from "react";
+import "./Sections.css";
 
 function Sections() {
   return (

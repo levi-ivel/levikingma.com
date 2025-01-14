@@ -1,0 +1,13 @@
+.directions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.box {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #333;
+    text-align: center;
+}
