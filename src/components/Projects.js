@@ -2,11 +2,11 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faPython } from "@fortawesome/free-brands-svg-icons"; 
-
+import "./Projects.css";
 
 function Projects() {
   return (
-    <div className="section-box">
+    <div id="projects" className="section-box">
 
       <h2>Projects</h2>
 

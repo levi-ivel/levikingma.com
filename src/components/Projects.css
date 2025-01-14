@@ -1,0 +1,74 @@
+.project-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid #222222;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #111;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.project-gif {
+    max-width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.project-gif:hover {
+    transform: scale(1.05);
+}
+
+.project-info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.project-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.tech-icons, .github-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.icon {
+    font-size: 1.5rem;
+    color: #eee;
+    transition: color 0.3s ease;
+    width: 24px;  
+    height: 24px;
+}
+
+.github-link {
+    text-decoration: none;
+    color: aqua;
+    font-weight: bold;
+}
+
+.github-link:hover .icon {
+    color: #4CAF50;
+}
+
+.project-info p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.project-info .further-info a {
+    color: aqua;
+    text-decoration: none;
+}
+
+.project-info .further-info a:hover {
+    text-decoration: underline;
+}
