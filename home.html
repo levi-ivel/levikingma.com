@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta charset="utf-8" />
+    <link rel="icon" href="assets/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+
+    <meta name="samenvatting" 
+    lang="nl" 
+    content="Software Development portofolio van Levi Kingma dat zijn projecten en expertise in C#, Python, HTML, CSS, JavaScript, Flutter, PHP en SQL uitlicht."
+    />
+
+    <meta name="description" 
+    lang="en" 
+    content="Software Development portofolio of Levi Kingma highlighting his projects and expertise in C#, Python, HTML, CSS, JavaScript, Flutter, PHP and SQL."
+    />
+
+    <meta
+    name="keywords"
+    content="software, development, levi, kingma, software development, software developer, levi kingma, C#, Python, HTML, CSS, javascript, flutter, PHP, SQL, git, github"
+    />
+
+    <link rel="apple-touch-icon" href="assets/logo192.png" />
+    <title>Levi Kingma - Software Development</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li class="nav-item" onclick="scrollToTop()">Home</li>
+                <li class="nav-item" onclick="scrollToSection('tools-skills')">Tools & Skills</li>
+                <li class="nav-item" onclick="scrollToSection('projects')">Projects</li>
+            </ul>
+        </nav>
+    </header>
+
+    <header>
+        <br><br><br>
+        <span class="time" id="current-time">It is currently </span>
+
+        <div class="intro">
+            <p>
+                Levi Kingma <br/>
+                📍Friesland, Netherlands📍 <br/>
+                I'm a second-year Software Development student @ Firda <br/>
+                I like making interesting things
+            </p>
+        </div>
+
+        <div class="name">
+            <pre class="ascii-art">
+     ___       ___           ___                 
+    /\__\     /\  \         /\__\          ___   
+   /:/  /    /::\  \       /:/  /         /\  \  
+  /:/  /    /:/\:\  \     /:/  /          \:\  \ 
+ /:/  /    /::\~\:\  \   /:/__/  ___      /::\__\
+/:/__/    /:/\:\ \:\__\  |:|  | /\__\  __/:/\/__/
+\:\  \    \:\~\:\ \/__/  |:|  |/:/  / /\/:/  /   
+ \:\  \    \:\ \:\__\    |:|__/:/  /  \::/__/    
+  \:\  \    \:\ \/__/     \::::/__/    \:\__\    
+   \:\__\    \:\__\        ~~~~         \/__/    
+    \/__/     \/__/                              
+            </pre>
+        </div>
+
+        <div id="tools-skills" class="contact-links">
+            <a href="https://github.com/levi-ivel" target="_blank" rel="noopener noreferrer" class="social-btn">
+                <i class="fab fa-github fa-2x"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/levi-kingma-36a317293/" target="_blank" rel="noopener noreferrer" class="social-btn">
+                <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+            <a href="./assets/CV.pdf" target="_blank" class="social-btn">
+                Download Resume
+            </a>
+            <a href="mailto:zakelijk@levikingma.com" class="social-btn">
+                <i class="fas fa-envelope fa-2x"></i>
+            </a>
+            <a href="https://www.instagram.com/levi.kingma/" target="_blank" rel="noopener noreferrer" class="social-btn">
+                <i class="fab fa-instagram fa-2x"></i>
+            </a>
+        </div>
+    </header>
+
+    <section class="directions">
+        <div class="box">
+            <h2>My Skills</h2>
+            <div class="section-box">
+                <div class="section-list">Frontend { HTML, CSS, JavaScript }</div>
+                <div class="section-list">Backend { PHP, SQL }</div>
+                <div class="section-list">App { Flutter, Flask }</div>
+                <div class="section-list">General Purpose { C#, Python }</div>
+            </div>
+        </div>
+
+        <div class="box" id="effect">
+            <h2>My Tools</h2>
+            <div class="section-box">
+                <div class="section-list">IDE { VSCode, IntelliJ IDEA, Android Studio }</div>
+                <div class="section-list">Version Control { Git, GitHub, Gitlab }</div>
+                <div class="section-list">Backend Service { Apache Airflow, Microsoft Azure, MYSQL }</div>
+                <div class="section-list">Engine { Unity }</div>
+            </div>
+        </div>
+    </section>
+
+    <div id="projects" class="section-box">
+        <h2>Projects</h2>
+
+        <div class="project-box">
+            <img src="assets/MostUsed.gif" alt="Project Showcase" class="project-gif" />
+            <div class="project-info">
+                <h3>MostUsed</h3>
+                <div class="project-icons">
+                    <div class="tech-icons">
+                        <img src="assets/code-solid.svg" alt="code" class="icon" />
+                        <span>TypeScript</span>
+                    </div>
+                    <a href="https://github.com/levi-ivel/MostUsed" target="_blank" rel="noopener noreferrer" class="github-link">
+                        <i class="fab fa-github"></i>
+                        <span>See Code</span>
+                    </a>
+                </div>
+                <p class="further-info">
+                    MostUsed is a plugin I made for note taking webapp Obsidian. It takes the most used words from a persons vault, folder or note and displays those words in a graph by usage <br/> <br/>
+                    The project was started on 01-05-2024, merged with Obsidian's branch on 18-05-2024 and is currently sitting at 1310 downloads
+                </p>
+            </div>
+        </div>
+
+        <div class="project-box">
+            <img src="assets/Dess.gif" alt="Project Showcase" class="project-gif" />
+            <div class="project-info">
+                <h3>Desstop</h3>
+                <div class="project-icons">
+                    <div class="tech-icons">
+                        <i class="fab fa-python"></i>
+                        <span>Python, TKinter</span>
+                    </div>
+                    <a href="https://github.com/levi-ivel/Desstop" target="_blank" rel="noopener noreferrer" class="github-link">
+                        <i class="fab fa-github"></i>
+                        <span>See Code</span>
+                    </a>
+                </div>
+                <p class="further-info">
+                    Desstop is an ASCII faced desktop assistant that can perform numerous commands via a terminal. It can set countdowns, open programs, run routines of other commands and much more <br/> <br/>
+                    This project was started on 19-05-2024 and finished on 31-05-2024
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p class="trademark">© <span id="current-year"></span> Levi Kingma</p>
+
+        <hr class="footer-line"/>
+
+        <button onclick="scrollToTop()">
+            <div class="text">
+                <span>Back</span>
+                <span>to</span>
+                <span>top</span>
+            </div>
+            <div class="clone">
+                <span>Back</span>
+                <span>to</span>
+                <span>top</span>
+            </div>
+            <svg stroke-width="2" stroke="currentColor" viewBox="0 0 24 24" fill="none" class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" width="20px">
+                <path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linejoin="round" stroke-linecap="round"></path>
+            </svg>
+        </button>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
