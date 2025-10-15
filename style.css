@@ -7,21 +7,19 @@
 
 body {
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: #282828;
     color: #ebdbb2;
-    font-family: "Courier New", Courier, monospace;
+    font-size: 17px;
     min-height: 100vh;
     margin: 0;
     position: relative;
     scroll-behavior: smooth;
     overflow-x: hidden;
     background-color: transparent;
-    background-image: radial-gradient(#3c3836 1.5px, #282828 1.5px);
+    background-image: radial-gradient(#252525 1.5px, #1d2021 1.5px);
     background-size: 25px 25px;
     width: 100%;
     height: 100%;
@@ -31,7 +29,7 @@ body {
 }
 
 .intro a {
-    color: #fe8019;
+    color: #d65d0e;
     text-decoration: underline;
 }
 
@@ -43,12 +41,18 @@ font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
     font-size: 20px;
     white-space: pre;
     overflow: hidden;
-    letter-spacing: -11.8px;
-    transition: letter-spacing 0.5s ease-in-out;
+    background: linear-gradient(90deg, #ebdbb2, #fabd2f, #fe8019, #fb4934, #fe8019, #fabd2f, #ebdbb2);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    color: transparent;
+    transition: background-position 0.5s ease;
 }
 
 .ascii-art:hover {
-    letter-spacing: normal;
+    background-position: 100% center;
 }
 
 header {
@@ -71,23 +75,34 @@ header {
 }
 
 .social-btn {
-    color: #ebdbb2;
+    color: #928374;
     text-decoration: none;
     padding: 10px;
     display: flex;
     align-items: center;
-    transition: color 0.3s;
+    transition: color 0.5s ease-in-out;
     font-size: 16px;
     font-weight: bold;
 }
 
-.social-btn:hover {
-    color: #fabd2f; 
+.social-btn:nth-child(1):hover {
+    color: #ebdbb2;
 }
 
-.social-btn svg {
-    width: 32px;
-    height: 32px;
+.social-btn:nth-child(2):hover {
+    color: #fabd2f;
+}
+
+.social-btn:nth-child(3):hover {
+    color: #fc9a24;
+}
+
+.social-btn:nth-child(4):hover {
+    color: #fe8019;
+}
+
+.social-btn:nth-child(5):hover {
+    color: #fb4934;
 }
 
 /* Responsive */
@@ -95,7 +110,6 @@ header {
     .ascii-art{
         font-size: 12px;
         letter-spacing: normal; 
-        transition: none;
     }
 }
 
