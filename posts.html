@@ -17,12 +17,64 @@
     <main class="blog-container">
         <h1 class="blog-title">Posts</h1>
         <div class="posts-list">
-            <a href="posts/AoC2025.html" class="post-link">AoC 2025</a>
-            <a href="posts/Test.html" class="post-link">Test</a>
+
+            <a href="posts/AoC2025.html" class="post-card">
+                <div class="post-cover">
+                    <img src="assets/tree.png" alt="AoC 2025 cover" />
+                </div>
+                <div class="post-content">
+                    <h2 class="post-title">AoC 2025</h2>
+                    <p class="post-description">Battle to the DEATH with <br> Niels for AoC 2025 hjkewhhkhvekhhveh</p>
+                    <span class="post-arrow">~~~></span>
+                </div>
+            </a>
+
         </div>
     </main>
 
-    <script src="script.js"></script>
+    <script>
+        // Apply listeners to all post cards to animate the arrow onhover
+        function setupArrowAnimation() {
+            document.querySelectorAll('.post-card').forEach(card => {
+                const arrow = card.querySelector('.post-arrow');
+                const original = arrow.textContent;
+                const originalTildes = (original.match(/~/g) || []).length;
+                let interval = null;
+                
+                const stop = () => {
+                    if (interval){
+                        clearInterval(interval);
+                    }
+                    interval = null;
+                };
+                
+                card.addEventListener('mouseenter', () => {
+                    stop();
+                    interval = setInterval(() => {
+                        const tildes = (arrow.textContent.match(/~/g) || []).length;
+                        if (tildes - originalTildes >= 10) {
+                            stop();
+                            return;
+                        }
+                        arrow.textContent = arrow.textContent.replace(/>/, '~>');
+                    }, 100);
+                });
+                
+                card.addEventListener('mouseleave', () => {
+                    stop();
+                    interval = setInterval(() => {
+                        if (arrow.textContent === original) {
+                            stop();
+                            return;
+                        }
+                        arrow.textContent = arrow.textContent.replace(/~>/, '>');
+                    }, 50);
+                });
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', setupArrowAnimation);
+    </script>
 </body>
 </html>
 

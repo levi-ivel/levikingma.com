@@ -146,21 +146,56 @@ header {
     gap: 20px;
     align-items: center;
     width: 100%;
-    max-width: 600px;
+    max-width: 800px;
 }
 
-.post-link {
-    color: #a89984;
-    text-decoration: underline;
-    font-size: 24px;
-    transition: color 0.5s ease-in-out;
-    padding: 10px 20px;
-    text-align: center;
+.post-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #1d2021;
+    border: 2px solid #3c3836;
+    border-radius: 8px;
+    text-decoration: none;
     width: 100%;
+    max-width: 800px;
 }
 
-.post-link:hover {
-    color: #fe8019;
+.post-cover {
+    width: 150px;
+    height: 150px;
+    border-radius: 6px;
+    background-color: #282828;
+}
+
+.post-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.post-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.post-title {
+    color: #ebdbb2;
+    font-size: 24px;
+}
+
+.post-description {
+    color: #a89984;
+    font-size: 16px;
+}
+
+.post-arrow {
+    color: #928374;
+    font-size: 40px;
+    font-weight: bold;
 }
 
 /* Responsive */
@@ -174,9 +209,16 @@ header {
         font-size: 24px;
     }
     
-    .post-link {
-        font-size: 20px;
+    .post-card {
+        flex-direction: column;
+        align-items: stretch;
     }
+    
+    .post-cover {
+        width: 100%;
+        height: 200px;
+    }
+    
 }
 
 @media (max-width: 480px) {
@@ -189,7 +231,15 @@ header {
         margin-bottom: 30px;
     }
     
-    .post-link {
-        font-size: 18px;
+    .post-title {
+        font-size: 20px;
+    }
+    
+    .post-description {
+        font-size: 14px;
+    }
+    
+    .post-cover {
+        height: 150px;
     }
 }
