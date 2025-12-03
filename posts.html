@@ -47,6 +47,10 @@
     <script>
         // Apply listeners to all post cards to animate the arrow onhover
         function setupArrowAnimation() {
+            if (window.matchMedia('(max-width: 768px)').matches) {
+                return;
+            }
+            
             document.querySelectorAll('.post-card').forEach(card => {
                 const arrow = card.querySelector('.post-arrow');
                 const original = arrow.textContent;
@@ -89,4 +93,3 @@
     </script>
 </body>
 </html>
-
