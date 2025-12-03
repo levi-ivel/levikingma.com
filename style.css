@@ -238,46 +238,6 @@ header {
     color: #ebdbb2;
 }
 
-/* Leaderboard */
-.leaderboard {
-    margin: 30px 0;
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    padding: 15px;
-    background-color: #1d2021;
-    border: 2px solid #3c3836;
-    border-radius: 8px;
-}
-
-.leaderboard-entries {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    flex: 1;
-}
-
-.current-day {
-    color: #a89984;
-    white-space: nowrap;
-}
-
-.leaderboard-entry {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.profile-photo {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.medal {
-    font-size: 24px;
-}
 
 /* Responsive */
 @media (max-width: 768px) {
