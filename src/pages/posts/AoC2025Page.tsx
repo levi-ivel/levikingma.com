@@ -611,6 +611,9 @@ for i := 0; i < boxes; i++ {
                                 <p>
                                     Enjoyed this post? Give this repo a star <a href="https://github.com/levi-ivel/levikingma.com" target="_blank" rel="noopener noreferrer">here</a> 🌟
                                 </p>
+                                <button className="back-to-top" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
+                                    Back to Top
+                                </button>
                             </footer>
                         </div>
                     </article>

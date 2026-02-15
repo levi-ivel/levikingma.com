@@ -200,3 +200,21 @@ a.day-card .day-language {
   font-style: italic;
   font-size: 16px;
 }
+
+.back-to-top {
+  margin-top: 2rem;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #d65d0e;
+  border: 2px solid #d65d0e;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.back-to-top:hover {
+  background-color: #d65d0e;
+  color: #1d2021;
+}
