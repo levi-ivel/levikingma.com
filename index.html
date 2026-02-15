@@ -1,182 +1,114 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="assets/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
+  <meta charset="utf-8" />
+  <link rel="icon" href="/assets/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" lang="en" content="Backend & System design guy" />
+  <meta name="keywords"
+    content="software, development, levi, kingma, software development, software developer, levi kingma, C#, Python, HTML, CSS, javascript, backend, SQL, git, github, docker, system design" />
 
-    <meta name="description" 
-    lang="en" 
-    content="Backend & System design guy"
-    />
+  <meta property="og:type" content="profile" />
+  <meta property="og:title" content="Levi Kingma" />
+  <meta property="og:description"
+    content="Software engineer and student at Firda. Experienced in fullstack system design." />
+  <meta property="og:image" content="https://www.levikingma.com/assets/me.jpg" />
+  <meta property="og:url" content="https://www.levikingma.com/" />
+  <meta property="og:site_name" content="Levi Kingma" />
 
-    <meta
-    name="keywords"
-    content="software, development, levi, kingma, software development, software developer, levi kingma, C#, Python, HTML, CSS, javascript, backend, SQL, git, github, docker, system design"
-    />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Levi Kingma" />
+  <meta name="twitter:description"
+    content="Software engineer and student at Firda. Experienced in fullstack system design." />
+  <meta name="twitter:image" content="https://www.levikingma.com/assets/me.jpg" />
+  <meta name="robots" content="index, follow" />
 
-    <meta property="og:type" content="profile">
-    <meta property="og:title" content="Levi Kingma">
-    <meta property="og:description" content="Software engineer and student at Firda. Experienced in fullstack system design.">
-    <meta property="og:image" content="https://www.levikingma.com/assets/me.jpg">
-    <meta property="og:url" content="https://www.levikingma.com/">
-    <meta property="og:site_name" content="Levi Kingma">
+  <link rel="apple-touch-icon" href="/assets/icon.webp" />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+  <title>Levi Kingma - Software Development</title>
 
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Levi Kingma">
-    <meta name="twitter:description" content="Software engineer and student at Firda. Experienced in fullstack system design.">
-    <meta name="twitter:image" content="https://www.levikingma.com/assets/me.jpg">
-
-    <link rel="apple-touch-icon" href="assets/icon.png" />
-    <title>Levi Kingma - Software Development</title>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
-    <link rel="stylesheet" href="style.css">
-
-    <meta name="robots" content="index, follow" />
-
-    <script type="application/ld+json">
-    {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Levi Kingma",
-    "url": "https://www.levikingma.com/",
-    "image": "https://www.levikingma.com/assets/me.jpg",
-    "email": "zakelijk@levikingma.com",
-    "jobTitle": "Software Engineer",
-    "description": "Levi Kingma is a software engineering student at Firda specializing in fullstack system design. He has experience working with Wageningen University & Research and the Frisian Municipality.",
-    "alumniOf": {
-        "@type": "EducationalOrganization",
-        "name": "RSG Simon Vestdijk"
-    },
-    "affiliation": [
-        {
-        "@type": "EducationalOrganization",
-        "name": "Firda"
+  <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Levi Kingma",
+        "url": "https://www.levikingma.com/",
+        "image": "https://www.levikingma.com/assets/me.jpg",
+        "email": "zakelijk@levikingma.com",
+        "jobTitle": "Software Engineer",
+        "description": "Levi Kingma is a software engineering student at Firda specializing in fullstack system design. He has experience working with Wageningen University & Research and the Frisian Municipality.",
+        "alumniOf": {
+          "@type": "EducationalOrganization",
+          "name": "RSG Simon Vestdijk"
         },
-        {
-        "@type": "Organization",
-        "name": "Dairy Campus"
+        "affiliation": [
+          {
+            "@type": "EducationalOrganization",
+            "name": "Firda"
+          },
+          {
+            "@type": "Organization",
+            "name": "Dairy Campus"
+          },
+          {
+            "@type": "GovernmentOrganization",
+            "name": "Frisian Municipality"
+          }
+        ],
+        "birthDate": "2006-10-17",
+        "birthPlace": {
+          "@type": "Place",
+          "name": "Sneek"
         },
-        {
-        "@type": "GovernmentOrganization",
-        "name": "Frisian Municipality"
-        }
-    ],
-    "birthDate": "2006-10-17",
-    "birthPlace": {
-        "@type": "Place",
-        "name": "Sneek"
-    },
-    "nationality": {
-        "@type": "Country",
-        "name": "Netherlands"
-    },
-    "memberOf": {
-        "@type": "Organization",
-        "name": "GitHub",
-        "sameAs": "https://github.com"
-    },
-    "hasOccupation": {
-        "@type": "Occupation",
-        "name": "Software Engineer"
-    },
-    "knowsAbout": [
-        "Python",
-        "JavaScript",
-        "TypeScript",
-        "C#",
-        "Lua",
-        "HTML",
-        "CSS",
-        "Flutter",
-        "React",
-        "Flask",
-        "Node.js",
-        "Docker",
-        "System Design",
-        "API Design",
-        "Frontend Development",
-        "Backend Development"
-    ],
-    "knowsLanguage": [
-        "Dutch",
-        "English"
-    ],
-    "sameAs": [
-        "https://www.levikingma.com/",
-        "https://github.com/levi-ivel",
-        "https://www.linkedin.com/in/levi-kingma-36a317293/",
-        "https://www.youtube.com/@levi-bl8by",
-        "https://www.wikidata.org/wiki/Q135450791"
-    ]
-    }
+        "nationality": {
+          "@type": "Country",
+          "name": "Netherlands"
+        },
+        "memberOf": {
+          "@type": "Organization",
+          "name": "GitHub",
+          "sameAs": "https://github.com"
+        },
+        "hasOccupation": {
+          "@type": "Occupation",
+          "name": "Software Engineer"
+        },
+        "knowsAbout": [
+          "Python",
+          "JavaScript",
+          "TypeScript",
+          "C#",
+          "Lua",
+          "HTML",
+          "CSS",
+          "Flutter",
+          "React",
+          "Flask",
+          "Node.js",
+          "Docker",
+          "System Design",
+          "API Design",
+          "Frontend Development",
+          "Backend Development"
+        ],
+        "knowsLanguage": ["Dutch", "English"],
+        "sameAs": [
+          "https://www.levikingma.com/",
+          "https://github.com/levi-ivel",
+          "https://www.linkedin.com/in/levi-kingma-36a317293/",
+          "https://www.youtube.com/@levi-bl8by",
+          "https://www.wikidata.org/wiki/Q135450791"
+        ]
+      }
     </script>
 </head>
+
 <body>
-    <nav class="top-nav">
-        <a href="posts.html" class="nav-link">posts</a>
-    </nav>
-
-    <header>
-        <span class="time" id="current-time">It is currently </span>
-
-        <div class="intro">
-            <p>
-                Levi Kingma <br/>
-                📍Friesland, Netherlands📍 <br/>
-                I like making interesting things  <br/>
-                And I use <a href="https://github.com/levi-ivel/dotfiles">Arch</a>, btw
-            </p>
-        </div>
-
-        <div class="name">
-            <pre class="ascii-art">
-     ___       ___           ___                 
-    /\__\     /\  \         /\__\          ___   
-   /:/  /    /::\  \       /:/  /         /\  \  
-  /:/  /    /:/\:\  \     /:/  /          \:\  \ 
- /:/  /    /::\~\:\  \   /:/__/  ___      /::\__\
-/:/__/    /:/\:\ \:\__\  |:|  | /\__\  __/:/\/__/
-\:\  \    \:\~\:\ \/__/  |:|  |/:/  / /\/:/  /   
- \:\  \    \:\ \:\__\    |:|__/:/  /  \::/__/    
-  \:\  \    \:\ \/__/     \::::/__/    \:\__\    
-   \:\__\    \:\__\        ~~~~         \/__/    
-    \/__/     \/__/                              
-            </pre>
-        </div>
-
-        <div class="contact-links">
-            <a href="https://github.com/levi-ivel" target="_blank" rel="noopener noreferrer" class="social-btn">
-                <i class="fab fa-github fa-2x"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/levi-kingma-36a317293/" target="_blank" rel="noopener noreferrer" class="social-btn">
-                <i class="fab fa-linkedin fa-2x"></i>
-            </a>
-            <a href="./assets/CV.pdf" target="_blank" class="social-btn">
-                Download Resume
-            </a>
-            <a href="mailto:zakelijk@levikingma.com" class="social-btn">
-                <i class="fas fa-envelope fa-2x"></i>
-            </a>
-            <a href="https://www.instagram.com/levi.kingma/" target="_blank" rel="noopener noreferrer" class="social-btn">
-                <i class="fab fa-instagram fa-2x"></i>
-            </a>
-        </div>
-    </header>
-
-    <script>
-        // Update timer every second
-        function updateTime() {
-            const timeElement = document.getElementById('current-time');
-            
-            const now = new Date();
-            timeElement.textContent = 'It is currently ' + now.toLocaleTimeString();
-        }
-
-        setInterval(updateTime, 1000);
-        updateTime();
-    </script>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
 </body>
+
 </html>

@@ -1,0 +1,138 @@
+header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.intro p {
+  line-height: 1.6;
+}
+
+.intro a {
+  color: #d65d0e;
+  text-decoration: underline;
+}
+
+.ascii-art {
+  font-size: 20px;
+  white-space: pre;
+  overflow: hidden;
+  background: linear-gradient(90deg, #ebdbb2, #fabd2f, #fe8019, #fb4934, #fe8019, #fabd2f, #ebdbb2);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  color: transparent;
+  transition: background-position 0.5s ease;
+}
+
+.ascii-art:hover {
+  background-position: 100% center;
+}
+
+.contact-links {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.social-btn {
+  color: #928374;
+  text-decoration: none;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  transition: color 0.5s ease-in-out;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.social-btn:nth-child(1):hover {
+  color: #ebdbb2;
+}
+
+.social-btn:nth-child(2):hover {
+  color: #fabd2f;
+}
+
+.social-btn:nth-child(3):hover {
+  color: #fc9a24;
+}
+
+.social-btn:nth-child(4):hover {
+  color: #fe8019;
+}
+
+.social-btn:nth-child(5):hover {
+  color: #fb4934;
+}
+
+.spring-icon {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(30px) scale(0.92);
+  animation: spring-up 0.6s forwards;
+  animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform, opacity;
+}
+
+.social-btn:nth-child(1) .spring-icon {
+  animation-delay: 0s;
+}
+
+.social-btn:nth-child(2) .spring-icon {
+  animation-delay: 0.08s;
+}
+
+.social-btn:nth-child(4) .spring-icon {
+  animation-delay: 0.16s;
+}
+
+.social-btn:nth-child(5) .spring-icon {
+  animation-delay: 0.24s;
+}
+
+@keyframes spring-up {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.92);
+  }
+
+  70% {
+    opacity: 1;
+    transform: translateY(-2px) scale(1.01);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .spring-icon {
+    opacity: 1;
+    transform: none;
+    animation: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .ascii-art {
+    font-size: 12px;
+    letter-spacing: normal;
+  }
+}
+
+@media (max-width: 480px) {
+  .intro p {
+    margin-bottom: 15px;
+  }
+}

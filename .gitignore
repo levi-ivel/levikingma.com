@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.bun/
+
+*.tsbuildinfo
+*.d.ts
+*.js
+!src/vite-env.d.ts
+
+.DS_Store
+.env*
+!.env.example

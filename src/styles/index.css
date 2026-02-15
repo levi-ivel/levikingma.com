@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #1d2021;
+  background-image: radial-gradient(#252525 1.5px, #1d2021 1.5px);
+  background-size: 25px 25px;
+  background-attachment: fixed;
+  overscroll-behavior: none;
+}
+
+body {
+  margin: 0;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #282828;
+  color: #ebdbb2;
+  font-size: 17px;
+  min-height: 100vh;
+  position: relative;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  background-color: transparent;
+  background-image: radial-gradient(#252525 1.5px, #1d2021 1.5px);
+  background-size: 25px 25px;
+  width: 100%;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-nav {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-link {
+  color: #a89984;
+  text-decoration: underline;
+  font-size: 20px;
+  transition: color 0.5s ease-in-out;
+}
+
+.nav-link:hover {
+  color: #fe8019;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.blog-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 100px 20px 40px 20px;
+  width: 100%;
+}
+
+.blog-container p a,
+.blog-container li a {
+  color: #d65d0e;
+  text-decoration: underline;
+}
+
+.blog-title {
+  color: #ebdbb2;
+  font-size: 32px;
+  margin-bottom: 40px;
+  text-align: center;
+  width: 100%;
+  max-width: 800px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.toast {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%) translateY(100px);
+  background-color: rgba(40, 40, 40, 0.95);
+  color: #a89984;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 13px;
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  z-index: 1000;
+}
+
+.toast.show {
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .blog-title {
+    font-size: 24px;
+  }
+
+  .toast {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .blog-title {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+}
