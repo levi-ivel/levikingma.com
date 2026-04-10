@@ -61,6 +61,9 @@ export function HomePage() {
           >
             <i className="fab fa-github fa-2x spring-icon"></i>
           </a>
+          <a href="mailto:zakelijk@levikingma.com" className="social-btn">
+            <i className="fas fa-envelope fa-2x spring-icon"></i>
+          </a>
           <a
             href="https://www.linkedin.com/in/levi-kingma-36a317293/"
             target="_blank"
@@ -68,25 +71,6 @@ export function HomePage() {
             className="social-btn"
           >
             <i className="fab fa-linkedin fa-2x spring-icon"></i>
-          </a>
-          <a
-            href="/assets/CV.pdf"
-            target="_blank"
-            rel="noreferrer"
-            className="social-btn"
-          >
-            Download Resume
-          </a>
-          <a href="mailto:zakelijk@levikingma.com" className="social-btn">
-            <i className="fas fa-envelope fa-2x spring-icon"></i>
-          </a>
-          <a
-            href="https://www.instagram.com/levi.kingma/"
-            target="_blank"
-            rel="noreferrer"
-            className="social-btn"
-          >
-            <i className="fab fa-instagram fa-2x spring-icon"></i>
           </a>
         </div>
       </header>

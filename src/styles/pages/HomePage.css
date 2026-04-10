@@ -38,20 +38,24 @@ header {
 
 .contact-links {
   display: flex;
-  gap: 20px;
+  gap: 32px;
   justify-content: center;
   margin-top: 40px;
+  width: 100%;
 }
 
 .social-btn {
   color: #928374;
   text-decoration: none;
-  padding: 10px;
+  padding: 0;
   display: flex;
   align-items: center;
+  justify-content: center;
   transition: color 0.5s ease-in-out;
   font-size: 16px;
   font-weight: bold;
+  width: 32px;
+  height: 32px;
 }
 
 .social-btn:nth-child(1):hover {
@@ -88,15 +92,11 @@ header {
 }
 
 .social-btn:nth-child(2) .spring-icon {
-  animation-delay: 0.08s;
+  animation-delay: 0.1s;
 }
 
-.social-btn:nth-child(4) .spring-icon {
-  animation-delay: 0.16s;
-}
-
-.social-btn:nth-child(5) .spring-icon {
-  animation-delay: 0.24s;
+.social-btn:nth-child(3) .spring-icon {
+  animation-delay: 0.2s;
 }
 
 @keyframes spring-up {
