@@ -27,12 +27,12 @@ export function AoC2025Page() {
 
                         <div className="post-body">
                             <p>
-                                The Advent of Code 2025 has come around once more, but this time only with 12 puzzles to solve.
+                                Advent of Code has come around once more, but this time with only 12 puzzles to solve.
                             </p>
                             <p>
                                 To keep it interesting, my buddy <a href="https://github.com/nielsjaspers" target="_blank"
-                                    rel="noopener noreferrer">Niels</a> and I decided to challenge ourselves, and each other, by
-                                using a new programming language for each day.
+                                    rel="noopener noreferrer">Niels</a> and I decided to challenge ourselves and each other by
+                                using a new programming language for each puzzle.
                             </p>
                             <p>
                                 This is how it went:
@@ -40,34 +40,31 @@ export function AoC2025Page() {
 
                             <h2>Rules</h2>
                             <p>
-                                Let's start with the rules, they are as follows:
+                                Let's start with the rules. They are as follows:
                             </p>
                             <ul>
                                 <li>
                                     Start the day by spinning a roulette wheel containing 12 languages
                                     <br />
-                                    (C++, Rust, Go, Haskell, Python, TypeScript, C#, PHP, Java, Elixir, Lua, Zig)
+                                    (C++, Rust, Go, Haskell, Python, TypeScript, C#, PHP, Java, Elixir, Lua and Zig)
                                 </li>
                                 <li>
-                                    Try to solve the day's puzzle with the chosen language before the end of the day, no more
-                                    changes
-                                    can be made afterwards
+                                    Try to solve the day's puzzle with the chosen language before the end of the day, no making changes afterwards
                                 </li>
                                 <li>
-                                    When time's up, run each solution on the machines of all participants 1000 times, then
-                                    take the average
+                                    When time's up, run each solution 1000 times on every participant's machine, then
+                                    calculate the average runtime
                                 </li>
                                 <li>
-                                    The winner of the day is the one with the fastest average solution; the one with the most days won
-                                    is
-                                    the overall winner
+                                    The winner of each day's puzzle is the participant with the lowest average runtime. The participant
+                                    with the most daily wins is the overall winner
                                 </li>
                                 <li>NO AI</li>
                             </ul>
 
                             <h2>Results</h2>
                             <p>
-                                So, how did it go?
+                              So, how did it go?
                             </p>
 
                             <div className="days-grid">
@@ -94,7 +91,7 @@ export function AoC2025Page() {
                                     <div className="day-result">
                                         <div className="participant">
                                             <img loading="lazy" src="https://github.com/levi-ivel.png" alt="Levi" className="profile-photo" width={40} height={40} />
-                                            <span>Timed Out</span>
+                                            <span>Not completed</span>
                                         </div>
                                         <div className="participant winner">
                                             <img loading="lazy" src="https://github.com/nielsjaspers.png" alt="Niels" className="profile-photo" width={40} height={40} />
@@ -130,7 +127,7 @@ export function AoC2025Page() {
                                         </div>
                                         <div className="participant">
                                             <img loading="lazy" src="https://github.com/nielsjaspers.png" alt="Niels" className="profile-photo" width={40} height={40} />
-                                            <span>Timed Out</span>
+                                            <span>Not completed</span>
                                         </div>
                                     </div>
                                 </a>
@@ -142,7 +139,7 @@ export function AoC2025Page() {
                                     <div className="day-result">
                                         <div className="participant">
                                             <img loading="lazy" src="https://github.com/levi-ivel.png" alt="Levi" className="profile-photo" width={40} height={40} />
-                                            <span>Timed Out</span>
+                                            <span>Not completed</span>
                                         </div>
                                         <div className="participant winner">
                                             <img loading="lazy" src="https://github.com/nielsjaspers.png" alt="Niels" className="profile-photo" width={40} height={40} />
@@ -162,7 +159,7 @@ export function AoC2025Page() {
                                         </div>
                                         <div className="participant">
                                             <img loading="lazy" src="https://github.com/nielsjaspers.png" alt="Niels" className="profile-photo" width={40} height={40} />
-                                            <span>Timed Out</span>
+                                            <span>Not completed</span>
                                         </div>
                                     </div>
                                 </a>
@@ -178,7 +175,7 @@ export function AoC2025Page() {
                                         </div>
                                         <div className="participant">
                                             <img loading="lazy" src="https://github.com/nielsjaspers.png" alt="Niels" className="profile-photo" width={40} height={40} />
-                                            <span>Timed Out</span>
+                                            <span>Not completed</span>
                                         </div>
                                     </div>
                                 </a>
@@ -205,26 +202,26 @@ export function AoC2025Page() {
                                     <div className="day-result">
                                         <div className="participant">
                                             <img loading="lazy" src="https://github.com/levi-ivel.png" alt="Levi" className="profile-photo" width={40} height={40} />
-                                            <span>Timed Out</span>
+                                            <span>Not completed</span>
                                         </div>
                                         <div className="participant">
                                             <img loading="lazy" src="https://github.com/nielsjaspers.png" alt="Niels" className="profile-photo" width={40} height={40} />
-                                            <span>Timed Out</span>
+                                            <span>Not completed</span>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div className="day-card">
                                     <div className="day-header">Day 10</div>
-                                    <div className="day-language">Language: C/C++</div>
+                                    <div className="day-language">Language: C++</div>
                                     <div className="day-result">
                                         <div className="participant">
                                             <img loading="lazy" src="https://github.com/levi-ivel.png" alt="Levi" className="profile-photo" width={40} height={40} />
-                                            <span>Timed Out</span>
+                                            <span>Not completed</span>
                                         </div>
                                         <div className="participant">
                                             <img loading="lazy" src="https://github.com/nielsjaspers.png" alt="Niels" className="profile-photo" width={40} height={40} />
-                                            <span>Timed Out</span>
+                                            <span>Not completed</span>
                                         </div>
                                     </div>
                                 </div>
@@ -235,36 +232,33 @@ export function AoC2025Page() {
                                     <div className="day-result">
                                         <div className="participant">
                                             <img loading="lazy" src="https://github.com/levi-ivel.png" alt="Levi" className="profile-photo" width={40} height={40} />
-                                            <span>Timed Out</span>
+                                            <span>Not completed</span>
                                         </div>
                                         <div className="participant">
                                             <img loading="lazy" src="https://github.com/nielsjaspers.png" alt="Niels" className="profile-photo" width={40} height={40} />
-                                            <span>Timed Out</span>
+                                            <span>Not completed</span>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div className="day-card">
                                     <div className="day-header">Day 12</div>
-                                    <div className="day-language">Language: JS/TS</div>
+                                    <div className="day-language">Language: TypeScript</div>
                                     <div className="day-result">
                                         <div className="participant">
                                             <img loading="lazy" src="https://github.com/levi-ivel.png" alt="Levi" className="profile-photo" width={40} height={40} />
-                                            <span>Timed Out</span>
+                                            <span>Not completed</span>
                                         </div>
                                         <div className="participant">
                                             <img loading="lazy" src="https://github.com/nielsjaspers.png" alt="Niels" className="profile-photo" width={40} height={40} />
-                                            <span>Timed Out</span>
+                                            <span>Not completed</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <p>
-                                The results were quite close, as you can see. Below, I've highlighted a few interesting findings
-                                from the competition.
-                            </p>
-                            <p>
-                                Also, if you want to see the full solutions, you can click on the respective card.
+                                But results only tell part of the story. Each language came with its own surprises, so let's look at
+                                what stood out.
                             </p>
 
                             <h2>Day 1 - Accidental Optimization</h2>
@@ -289,22 +283,26 @@ foreach ($lines as $line) {
     ...`}
                             </code></pre>
                             <p>
-                                Notice that only one line has explicit casting; this is the only line in the solution where we do this.
+                                Notice that I'm only doing an explicit type cast on this line. But why only this line?
                             </p>
                             <p>
-                                This is because the overhead from the cast is slightly faster than the overhead for the implicit
-                                conversion that PHP would normally do for the calculations that come after.
+                                <code className="php">substr</code> returns both <code className="php">$direction</code> and{" "}
+                                <code className="php">$amount</code> as strings, but only <code className="php">$amount</code> is used
+                                as a number. <code className="php">$direction</code> stays a string and is compared with string literals,
+                                while every other value in the calculations is already an integer. Without the cast, PHP converts{" "}
+                                <code className="php">$amount</code> when it reaches the arithmetic. Casting it once was slightly faster
+                                in my tests and shaved off a few microseconds. Casting anything else would only add work because no other
+                                value needs converting.
                             </p>
                             <p>
-                                Did I know this at the time? No, I was just throwing anything at the wall to decrease the time by
-                                even a few microseconds. I find it funny that it led to an actual optimization though, and even
-                                funnier that I
-                                discovered after our post-game talk that Niels had the same optimization for the same reason.
+                                Did I know this at the time? No, I was throwing anything at the wall to save even a few microseconds.
+                                I find it funny that it led to a real optimization, though. It was even funnier to discover during
+                                our postgame talk that Niels had made the same optimization for the same reason.
                             </p>
 
                             <h2>Day 2 - Neat Trick</h2>
                             <p>
-                                This day involved having to calculate all palindrome numbers within a range. Here's the neat trick:
+                                This day involved finding invalid IDs made by repeating the same sequence of digits twice. Here's the neat trick:
                             </p>
                             <pre><code className="lua">
                                 {`local first, last = field:match("(%d+)%-(%d+)")
@@ -329,48 +327,49 @@ for k = 1, math.floor(lastDigit / 2) do
 end`}
                             </code></pre>
                             <p>
-                                I'd like to go over this one in detail, cause I'm fond of this solution. The best way to explain this is to use an example. We'll use the range 100-9999.
+                                I'd like to go over this one in detail because I'm fond of the solution. We'll use the range 100 to 9999 as an example.
                             </p>
                             <p>
-                                We start by separating the start and end values, and getting the digit count of our end value (4 in
-                                our case).
+                                We start by separating the start and end values, then count the digits in the end value. In our case,
+                                that count is 4.
                             </p>
                             <p>
-                                Then, we loop from 1 to half the digit count (2 in our case). We do half because only even-length
-                                palindromes are valid in this puzzle.
+                                We then loop from 1 to half that digit count, which gives us possible block lengths of 1 and 2.
+                                Repeating a block twice always produces a number with twice as many digits as the original block.
                             </p>
                             <p>
-                                In the first iteration (k=1), our base is 11 (10^1 + 1). Since our range starts at 100, we'd need to
-                                multiply 11 by at least 10 to get inside it, but since we're limited to 1-digit numbers for k=1,
-                                this step adds
-                                nothing.
+                                In the first iteration, <code className="lua">k</code> is 1 and the base is 11. Multiplying a one digit
+                                block by 11 repeats it, so 7 becomes 77. None of those two digit results reach our range, so this
+                                iteration adds nothing.
                             </p>
                             <p>
-                                In the second iteration (k=2), our base is 101 (10^2 + 1). To stay within our 100-9999 range, our
-                                2-digit multiplier (the "leftHalf") can be anything from 10 to 99.
+                                In the second iteration, <code className="lua">k</code> is 2 and the base is 101. Multiplying a two digit
+                                block by 101 is the same as multiplying it by 100 and adding it again. For example, 12 becomes 1212.
+                                To stay within our range, the block can be anything from 10 to 99.
                             </p>
                             <p>
-                                Finally, we take all those valid multipliers (10 through 99), sum them up (4905), and multiply by
-                                our base (101) to get the total for all 4-digit palindromes in one go.
+                                Finally, we sum those valid blocks, which gives us 4905, and multiply that sum by 101. This gives us
+                                the total of every valid repeated value with four digits in one calculation.
                             </p>
                             <p>
-                                We add this to our overall counter, and repeat until we've covered all digit lengths. The result for
-                                this
-                                range is 495405.
+                                We add that total to the counter and repeat for every possible block length. For this range, the final
+                                result is 495405.
                             </p>
                             <p>
-                                This worked, and was very fast, but it did take all the time I had for this day. Meaning I couldn't
-                                solve part 2, netting Niels the win.
+                                This worked and was very fast, but it took all the time I had that day, meaning I couldn't solve part 2.
+                                That gave Niels the win.
                             </p>
 
                             <h2>Day 3 - Sort of Sorted</h2>
                             <p>
-                                This one was fun. I needed to find the best two-digit number in a sequence without changing their
-                                relative
-                                order.
+                                This one was fun. I needed to choose two digits that formed the largest possible number while
+                                preserving their order in the original sequence.
                             </p>
                             <pre><code className="python">
-                                {`for digit in digits:
+                                {`first = digits[0]
+best = 0
+
+for digit in digits:
     candidate = first * 10 + digit
 
     if candidate > best:
@@ -385,18 +384,16 @@ end`}
                                 turned out to be a useful mental model here.
                             </p>
                             <p>
-                                Though, instead of actually destroying, I'm just tracking the "best" leading digit and the "best"
-                                pair we've
-                                seen so far, giving us a nice O(n) solution.
+                                Instead of removing anything, I track two values. <code className="python">first</code> is the largest
+                                digit before the current position, while <code className="python">best</code> is the largest valid pair
+                                found so far. Each digit is visited once, giving us a nice O(n) solution.
                             </p>
 
                             <h2>Day 4 - Zig</h2>
                             <p>
                                 No fancy shenanigans for this day, but I wanted to note that while Zig is quite intriguing, it
-                                has a lot of
-                                verbosity for things we take for granted in other languages. This is certainly not helped by the
-                                fact it has
-                                no stable release and therefore ever-changing syntax and documentation.
+                                requires a lot of code for things we take for granted in other languages. Zig has not reached version
+                                one yet, so its APIs can still change between releases and older documentation can become outdated.
                             </p>
                             <p>
                                 Here is an example:
@@ -414,11 +411,16 @@ end`}
     while (it.next()) |line| {
         try lines_list.append(alloc, line);
     }
+
+    const lines = try lines_list.toOwnedSlice(alloc);
+    defer alloc.free(lines);
     ...`}
                             </code></pre>
                             <p>
-                                Look at how much code is needed just to read a file into a list of strings! You have to pass the
-                                allocator around everywhere, and free it at the end of course.
+                                Look at how much code is needed just to read a file into a list of strings! APIs that allocate memory
+                                receive an allocator, and every allocation must later be released. Here, the input buffer is freed
+                                directly, while <code className="zig">toOwnedSlice</code> transfers the list storage into{" "}
+                                <code className="zig">lines</code> so that it can be freed before the function returns.
                             </p>
                             <p>
                                 Despite it being so tedious, the amount of control you have is pretty cool.
@@ -426,57 +428,62 @@ end`}
 
                             <h2>Day 5 - The JVM Incident</h2>
                             <p>
-                                Until now, all my code has had the same type of snippet at the end:
+                                Every solution up to this point ended with a benchmark loop like this:
                             </p>
                             <pre><code className="java">
-                                {`long average = 0;
+                                {`long totalNanoseconds = 0;
+int result = 0;
 
-for (int i = 1; i < 1000; i++){
+for (int i = 0; i < 1000; i++) {
     long start = System.nanoTime();
-    System.out.println(SolvePart1());
+    result = SolvePart1();
     long end = System.nanoTime();
-    long time = end - start;
-    average += time;
+    totalNanoseconds += end - start;
 }
 
-double microseconds = (double) average / 1000000;
-double milliseconds = microseconds / 1000;
-double seconds = milliseconds / 1000;`}
+double averageNanoseconds = (double) totalNanoseconds / 1000;
+double microseconds = averageNanoseconds / 1_000;
+double milliseconds = microseconds / 1_000;
+double seconds = milliseconds / 1_000;
+
+System.out.println(result);`}
                             </code></pre>
                             <p>
-                                I've added this snippet to all my solutions to make it easier to satisfy the timing rule of the
-                                challenge. But it actually led to a problem this time around.
+                                I used this approach in every language to satisfy the challenge's timing rule. The average looked
+                                fine at first, but Java was secretly doing something the others weren't.
                             </p>
                             <p>
-                                I solved part 1, ran this code, and got a time of 0.4 milliseconds. I told Niels about it, and then
-                                went out to dinner followed by a movie.
+                                I solved part 1, ran this code, and got an apparent average of 0.4 milliseconds. I told Niels about
+                                it, then went out to dinner followed by a movie.
                             </p>
                             <p>
-                                When I came back, I was met with a lot of messages from Niels in disbelief. Apparently my solution
-                                was way
-                                faster than his, way faster than anyone's solution for that matter, even faster than just reading the
-                                file and nothing else.
+                                When I came back, I found a flood of messages from Niels. My solution appeared to beat his and every
+                                other solution we compared it with. Somehow, it even seemed faster than reading the file and doing
+                                nothing else.
                             </p>
                             <p>
-                                After telling Niels about my entire setup, along with this snippet, he found the problem. You see,
-                                the JVM has a JIT compiler that optimizes code during runtime. Since I was running the solution
-                                multiple times in a loop,
-                                the JVM optimized the code after the first few runs, giving me an extremely fast average.
+                                After I explained my setup and showed him this snippet, Niels spotted the problem. Java's JIT compiler
+                                optimizes code while the program is running. Since I called the same solution 1000 times in one loop,
+                                the later runs were warmed up and much faster than the first.
                             </p>
                             <p>
-                                I removed the loop, and got an average of 5.4 milliseconds instead, resulting in a win for Niels.
+                                The other languages didn't speed up this way during their benchmarks, so Java's average wasn't a fair
+                                comparison.
+                            </p>
+                            <p>
+                                When I timed one cold call instead, it took 5.4 milliseconds. I also did not finish part 2, so Niels
+                                won the day with his completed 4.4 millisecond solution.
                             </p>
 
                             <h2>Day 6 - Getting Functional</h2>
                             <p>
-                                The functional paradigm usually makes these puzzles either trivial or a nightmare. Luckily, since today's problem
-                                was essentially just a giant horizontal list of numbers that needed their orientation flipped, we had
-                                a perfect use case for Haskell.
+                                The functional paradigm usually makes these puzzles either trivial or a nightmare. Luckily, this
+                                problem was a perfect use case for Haskell.
                             </p>
                             <p>
-                                The worksheet had numbers arranged vertically in columns, with the operator for each problem sitting
-                                at the very bottom. By transposing the input, each column became a standalone list that I could
-                                easily pair with its operator.
+                                Each input row contained one value from every problem, while the final row contained their operators.
+                                Transposing those rows grouped each vertical problem into its own list, which I could then pair with
+                                the corresponding operator.
                             </p>
                             <pre><code className="haskell">
                                 {`let numbers = transpose (init rows)
@@ -487,13 +494,14 @@ let numberGrid = map (map (either error fst . TR.decimal)) numbers
 let results = sum (zipWith applyOperator operators numberGrid)`}
                             </code></pre>
                             <p>
-                                Transposing the grid allowed me to use <code className="haskell">zipWith</code> to apply the operators
-                                across the data in a single, clean expression.
+                                Transposing the grid allowed me to use <code className="haskell">zipWith</code> to pair each operator
+                                with its corresponding number column and calculate the results in a single expression.
                             </p>
                             <p>
-                                The "trick" for this day was discovering that Haskell's standard <code className="haskell">read </code>
-                                is notoriously slow. Switching to <code className="haskell">Data.Text.Read.decimal</code> shaved off a
-                                significant amount of execution time.
+                                The "trick" for this day was improving the number parsing. In this solution,{" "}
+                                <code className="haskell">Data.Text.Read.decimal</code> was faster than the standard{" "}
+                                <code className="haskell">read</code> because it parsed each <code className="haskell">Text</code> value
+                                directly instead of converting it to a <code className="haskell">String</code> first.
                             </p>
 
                             <h2>Day 7 - We Love Some DP</h2>
@@ -527,11 +535,12 @@ let results = sum (zipWith applyOperator operators numberGrid)`}
 end`}
                             </code></pre>
                             <p>
-                                Every <code className="elixir">^</code> split into two new branches, so a naive DFS would just explode.
+                                Every <code className="elixir">^</code> split into two branches. Without a cache, different branches
+                                could reach the same coordinate and recalculate the entire path below it.
                             </p>
                             <p>
-                                Caching by coordinate fixed it. As soon as we knew the number of timelines from one point, any future
-                                path landing on that same point became basically free.
+                                The number of timelines below a point depends only on its coordinate, so I cached the result for each
+                                one. Every reachable coordinate was calculated once, and any later visit needed only a map lookup.
                             </p>
                             <p>
                                 The nice part is that the logic stayed the same, just with memoization on top.
@@ -554,6 +563,11 @@ for i := 0; i < boxes; i++ {
 
         if len(closestEdges) < maxEdges {
             closestEdges = append(closestEdges, Edge{i, j, distanceSquared})
+            if len(closestEdges) == maxEdges {
+                sort.Slice(closestEdges, func(a, b int) bool {
+                    return closestEdges[a].DistSq > closestEdges[b].DistSq
+                })
+            }
             continue
         }
 
@@ -588,11 +602,11 @@ for i := 0; i < boxes; i++ {
                             </p>
                             <p>
                                 Between school, work, and the increased difficulty of the puzzles, we simply didn't have the time or
-                                motivation to think of and implement the solutions, especially since we had to do some in C++ and
+                                motivation to design and implement the solutions, especially since we had to do some in C++ and
                                 Rust.
                             </p>
                             <p>
-                                It's a bit of a shame to finish with a string of "Timed Out" results, but oh well.
+                                It's a bit of a shame to finish with a string of "Not completed" results, but oh well.
                             </p>
                             <h2>Conclusion</h2>
                             <p>
@@ -600,9 +614,8 @@ for i := 0; i < boxes; i++ {
                                 never able to fully sink our time and effort into the puzzles.
                             </p>
                             <p>
-                                With all said and done, though, it was a fun experience. And we learned some fun facts about various languages
-                                along the way. We'll
-                                definitely be back for the next one with an even worse gimmick.
+                                Even so, it was a great experience, and we learned plenty of interesting quirks about the different
+                                languages along the way. We'll definitely be back for the next one with an even worse gimmick.
                             </p>
                             <p>
                                 Until next year!

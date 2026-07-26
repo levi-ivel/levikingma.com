@@ -5,23 +5,15 @@ import "../styles/pages/PostsPage.css";
 
 const POSTS: PostCardProps[] = [
   {
-    href: "/posts/AoC2025",
+    href: "/posts/the-2025-advent-of-code-showdown",
     title: "The 2025 Advent of Code Showdown:\n12 Days, 12 Languages",
-    coverSrc: "/assets/posts/tree.webp",
-    coverAlt: "AoC 2025 cover",
+    coverKind: "tree",
   },
-  // {
-  //   href: "/posts/AlgorithmicBotany",
-  //   title: "Algorithmic Botany and what it \nmeans to call programming an art",
-  //   coverSrc: "/assets/posts/tree.webp",
-  //   coverAlt: "Algorithmic Botany cover",
-  // },
-  // {
-  //   href: "/posts/WeatherForecasting",
-  //   title: "ECMWF IFS, BlueFire, and my newfound \nrespect for weather forecasts",
-  //   coverSrc: "/assets/posts/tree.webp",
-  //   coverAlt: "Weather Forecasting cover",
-  // },
+  {
+    href: "/posts/towards-perfect-note-taking",
+    title: "Towards Perfect Note Taking",
+    coverKind: "wheat",
+  }
 ];
 
 export function PostsPage() {
@@ -43,12 +35,11 @@ export function PostsPage() {
       <main className="blog-container">
         <h1 className="blog-title">Posts</h1>
         <div className="posts-list">
-          {POSTS.map((post) => (
+          {[...POSTS].reverse().map((post) => (
             <PostCard
               key={post.href}
               href={post.href}
-              coverSrc={post.coverSrc}
-              coverAlt={post.coverAlt}
+              coverKind={post.coverKind}
               title={post.title}
             />
           ))}
@@ -57,4 +48,3 @@ export function PostsPage() {
     </>
   );
 }
-

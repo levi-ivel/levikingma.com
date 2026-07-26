@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
+import asciiArt from "../assets/levi.txt?raw";
 import "../styles/pages/HomePage.css";
 
 export function HomePage() {
@@ -26,7 +27,7 @@ export function HomePage() {
           <p>
             Levi Kingma
             <br />
-            📍Friesland, Netherlands📍
+            Based in Friesland, Netherlands
             <br />I like backend and system development
             <br />
             And I use{" "}
@@ -38,18 +39,7 @@ export function HomePage() {
         </div>
 
         <div className="name">
-          <pre className="ascii-art">{String.raw`     ___       ___           ___                 
-    /\__\     /\  \         /\__\          ___   
-   /:/  /    /::\  \       /:/  /         /\  \  
-  /:/  /    /:/\:\  \     /:/  /          \:\  \ 
- /:/  /    /::\~\:\  \   /:/__/  ___      /::\__\
-/:/__/    /:/\:\ \:\__\  |:|  | /\__\  __/:/\/__/
-\:\  \    \:\~\:\ \/__/  |:|  |/:/  / /\/:/  /   
- \:\  \    \:\ \:\__\    |:|__/:/  /  \::/__/    
-  \:\  \    \:\ \/__/     \::::/__/    \:\__\    
-   \:\__\    \:\__\        ~~~~         \/__/    
-    \/__/     \/__/                              
-`}</pre>
+          <pre className="ascii-art">{asciiArt}</pre>
         </div>
 
         <div className="contact-links">

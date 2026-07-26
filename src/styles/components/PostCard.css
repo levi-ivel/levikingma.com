@@ -16,12 +16,121 @@
   height: 150px;
   border-radius: 6px;
   background-color: #282828;
+  display: grid;
+  place-items: center;
 }
 
-.post-cover img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.post-cover-art {
+  margin: 0;
+  color: #00b87c;
+  font: 16px/1.12 ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  white-space: pre;
+}
+
+.post-cover-art-wheat {
+  color: #98971a;
+}
+
+.ascii-wheat-grain-0 {
+  color: #fabd2f;
+}
+
+.ascii-wheat-grain-1 {
+  color: #d79921;
+}
+
+.ascii-wheat-stem {
+  color: #b8bb26;
+}
+
+.ascii-wheat-soil {
+  color: #b57614;
+}
+
+.ascii-wheat-row {
+  display: block;
+}
+
+.ascii-wheat-character-hidden {
+  visibility: hidden;
+}
+
+.ascii-star,
+.ascii-ornament {
+  display: inline-block;
+  position: relative;
+  transition: filter 650ms ease;
+  transition-delay: 0ms;
+}
+
+.ascii-star::after,
+.ascii-ornament::after {
+  position: absolute;
+  inset: 0;
+  content: attr(data-character);
+  opacity: 0;
+  pointer-events: none;
+  text-shadow: 0 0 2px currentColor, 0 0 6px currentColor, 0 0 12px currentColor;
+  transition: opacity 650ms ease;
+  transition-delay: 0ms;
+}
+
+.ascii-star {
+  color: #d65d0e;
+}
+
+.ascii-ornament-0 {
+  color: #cc241d;
+}
+
+.ascii-ornament-1 {
+  color: #458588;
+}
+
+.ascii-ornament-2 {
+  color: #b16286;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .post-card:hover .post-cover-art-tree .ascii-star,
+  .post-card:hover .post-cover-art-tree .ascii-ornament {
+    filter: brightness(1.2) saturate(1.1);
+    transition-delay: var(--light-delay);
+  }
+
+  .post-card:hover .post-cover-art-tree .ascii-star::after,
+  .post-card:hover .post-cover-art-tree .ascii-ornament::after {
+    opacity: 0.62;
+    transition-delay: var(--light-delay);
+  }
+}
+
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .post-cover-art-tree .ascii-star::after,
+  .post-cover-art-tree .ascii-ornament::after {
+    animation: ascii-lustre 2.2s ease-in-out infinite;
+  }
+
+  .post-cover-art-tree .ascii-ornament-1::after {
+    animation-delay: 0.35s;
+  }
+
+  .post-cover-art-tree .ascii-ornament-2::after {
+    animation-delay: 0.7s;
+  }
+}
+
+@keyframes ascii-lustre {
+  0%,
+  100% {
+    filter: brightness(0.95) blur(0.15px);
+    transform: scale(0.98);
+  }
+
+  50% {
+    filter: brightness(1.35) blur(0.35px);
+    transform: scale(1.08);
+  }
 }
 
 .post-content {
@@ -56,6 +165,11 @@
     height: 130px;
     flex-shrink: 0;
   }
+
+  .post-cover-art {
+    font-size: 14px;
+  }
+
 }
 
 @media (max-width: 480px) {
